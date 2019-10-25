@@ -125,8 +125,8 @@ Note: accounts are now stored under `auth` rather than `genaccounts`
             "tx_size_cost_per_byte": "10",
             "sig_verify_cost_ed25519": "590",
             "sig_verify_cost_secp256k1": "1000"
-        }
-        "accounts": [...]
+        },
+        "accounts": []
     },
 ```
 
@@ -144,7 +144,10 @@ These parameters are the same as cosmoshub-2 and 1, except:
 
 - `max_deposit` Cosmoshub-2's value is 512atom, or $2048 at an average $4/atom. So this is set to 4500kava to keep it comparable.
 
-Note: voting period must be less than unbonding period otherwise people could vote, redelegate, then vote again.
+Notes:
+
+- voting period must be less than unbonding period otherwise people could vote, redelegate, then vote again.
+- `max_deposit_period` and `voting_period` are 14 days
 
 ```json
     "gov": {
@@ -159,10 +162,10 @@ Note: voting period must be less than unbonding period otherwise people could vo
                     "amount": "4500000000"
                 }
                 ],
-            "max_deposit_period": "1209600000000000" // 14 days
+            "max_deposit_period": "1209600000000000"
         },
         "voting_params": {
-            "voting_period": "1209600000000000" // 14 days, has to be ≤ unbonding time
+            "voting_period": "1209600000000000"
         },
         "tally_params": {
             "quorum": "0.400000000000000000",
@@ -176,10 +179,14 @@ Note: voting period must be less than unbonding period otherwise people could vo
 
 These parameters are the same as cosmoshub-2 and 1.
 
+Notes:
+
+- `unbonding_time` is  21 days
+
 ```json
     "staking": {
         "params": {
-            "unbonding_time": "1814400000000000", // 21 days
+            "unbonding_time": "1814400000000000",
             "max_validators": 100,
             "max_entries": 7,
             "bond_denom": "ukava"
@@ -198,13 +205,19 @@ These parameters are the same as cosmoshub-2 and 1.
 
 These parameters are the same as cosmoshub-2 and 1.
 
+Notes:
+
+- `max_evidence_age` is 21 days, must be the same as unbonding period
+- `signed_blocks_window` is 16.67hrs given a 6s block time.
+- `downtime_jail_duration` is 10min
+
 ```json
     "slashing": {
         "params": {
-            "max_evidence_age": "1814400000000000", // 21 days, must be same as unbonding period
-            "signed_blocks_window": "10000", // 16.67hrs hours @ 6s block time (block time of testnet 3000)
-            "min_signed_per_window": "0.050000000000000000", // can be down for up to 15.83hrs without slashing
-            "downtime_jail_duration": "600000000000", // 10min
+            "max_evidence_age": "1814400000000000",
+            "signed_blocks_window": "10000",
+            "min_signed_per_window": "0.050000000000000000",
+            "downtime_jail_duration": "600000000000",
             "slash_fraction_double_sign": "0.050000000000000000",
             "slash_fraction_downtime": "0.000100000000000000"
         },
