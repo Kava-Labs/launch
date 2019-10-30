@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "DragonStake",
+            "identity": "EA61A46F31742B22",
+            "website": "https://dragonstake.io",
+            "security_contact": "dragonstake@protonmail.com",
+            "details": "Blockchain it all!!"
+          },
+          "commission": {
+            "rate": "0.150000000000000000",
+            "max_rate": "1.000000000000000000",
+            "max_change_rate": "1.000000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava10d63q5s9lu7vl7e7z6j2t8nsmjpt9cy9r05y3z",
+          "validator_address": "kavavaloper10d63q5s9lu7vl7e7z6j2t8nsmjpt9cy9wewvf4",
+          "pubkey": "kavavalconspub1zcjduepq5yawpwgaq6mesakszhqfg5ckvchlqkamtez5qypwllsfhhws4hmqj68p4q",
+          "value": {
+            "denom": "ukava",
+            "amount": "50000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AjdC3owV/4LzpHOem5YeJ7MsxC6CvFfW3ThNqxnch1lN"
+        },
+        "signature": "aTEa69qtzhqLht7TauwP8taj+GF+klSxPw6EmPJijzhibqoL9kmSs730HsV/2J5tKxe4e5VmdI8ajIdMblk/ZA=="
+      }
+    ],
+    "memo": "7be071172bd0f104c238ade9f9d9b69046861692@192.168.69.69:26656"
+  }
+}
