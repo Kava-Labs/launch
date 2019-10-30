@@ -1,0 +1,46 @@
+{
+    "type": "cosmos-sdk/StdTx",
+    "value": {
+      "msg": [
+        {
+          "type": "cosmos-sdk/MsgCreateValidator",
+          "value": {
+            "description": {
+              "moniker": "InfStones",
+              "identity": "",
+              "website": "",
+              "security_contact": "",
+              "details": ""
+            },
+            "commission": {
+              "rate": "0.010000000000000000",
+              "max_rate": "1.000000000000000000",
+              "max_change_rate": "0.100000000000000000"
+            },
+            "min_self_delegation": "1",
+            "delegator_address": "kava1vyx7wt8s8dwcspdt7dy49sq4l3jwyhxy7m87rv",
+            "validator_address": "kavavaloper1vyx7wt8s8dwcspdt7dy49sq4l3jwyhxyndakmm",
+            "pubkey": "kavavalconspub1zcjduepq2v03gwaywadc7ar423rxmy7k7ev3y3tkvsetq7w30j0whymjkacsxjg9lt",
+            "value": {
+              "denom": "ukava",
+              "amount": "50000000"
+            }
+          }
+        }
+      ],
+      "fee": {
+        "amount": [],
+        "gas": "200000"
+      },
+      "signatures": [
+        {
+          "pub_key": {
+            "type": "tendermint/PubKeySecp256k1",
+            "value": "A8WEeD80wt4ZhAYZbLswoEr0Rkl2xVE054HXCq74sGr5"
+          },
+          "signature": "CQ2+ZAHPlp8A7cPTvhSISHc47mDmLJQydU+MsChSLKc4VMLDKEBg1mwT2ejGdITt/GM+V7yI4YWATKjt684fyg=="
+        }
+      ],
+      "memo": "9663ddd13f41efd250643849639eeb4847071651@172.1.0.208:26656"
+    }
+  }
