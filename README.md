@@ -3,7 +3,7 @@
 A repository for coordinating and documenting Kava network launches and upgrades.
 
 ## Kava-1 Launch
-The recommended software version is [v0.3.0](https://github.com/kava-labs/kava/releases/tag/v0.3.0)
+The recommended software version is [v0.3.1](https://github.com/kava-labs/kava/releases/tag/v0.3.1)
 
 The recomended genesis params are [here](./genesis-params.md)
 
