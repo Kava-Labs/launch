@@ -66,7 +66,7 @@ kvd gentx \
 5. Copy the gentx you created to a new directory in the `gentx` directory of this repo and name it `gentx.json`
 
 ```sh
-cp $HOME/.kvd/config/gentx/gentx-<node_id>/json ./gentx/<your-directory>/gentx.json
+cp $HOME/.kvd/config/gentx/gentx-<node_id>.json ./gentx/<your-directory>/gentx.json
 ```
 
 6. Create a key for your vesting account
