@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "page2",
+            "identity": "",
+            "website": "https://coinmarketcap.com/2/",
+            "security_contact": "",
+            "details": "Lorem Ipsum"
+          },
+          "commission": {
+            "rate": "0.050000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.050000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "kava1xka27j0jvmq97yunj5wp8fv242lycmax20gh97",
+          "validator_address": "kavavaloper1xka27j0jvmq97yunj5wp8fv242lycmax8ejlaf",
+          "pubkey": "kavavalconspub1zcjduepqx4zjl7vsh8pg4l3ndceu88h3027q0vvmpf7anv5c4xxq0htng5kqf24q07",
+          "value": {
+            "denom": "ukava",
+            "amount": "50000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A/Vx8TF90iHtuEUv2YriHAm04m1wBkvR3laiaaPlT4ou"
+        },
+        "signature": "f6aAKBmr9kYFDM92cBSyefnS4FJzVmKWZEtU/7INw0lBybv+BBMSCmDHEzMZJjPnsZ6wEnchrC13ufzn27QEZg=="
+      }
+    ],
+    "memo": "2545b4ac98518412cae7ce4814b2807392d0dc6c@127.0.0.1:26656"
+  }
+}
