@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-11-05T14:00:00Z",
+  "genesis_time": "2019-11-12T14:00:00Z",
   "chain_id": "kava-1",
   "consensus_params": {
     "block": {
@@ -18,24 +18,45 @@
   },
   "app_hash": "",
   "app_state": {
-    "staking": {
+    "params": null,
+    "slashing": {
       "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "ukava"
+        "max_evidence_age": "1814400000000000",
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.000100000000000000"
       },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "ukava",
+        "amount": "2000000000"
+      }
+    },
+    "validatorvesting": {
+      "previous_block_time": "1970-01-01T00:00:00Z"
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.070000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "ukava",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.030000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "5256000"
+      }
     },
     "auth": {
       "params": {
-        "max_memo_characters": "256",
+        "max_memo_characters": "512",
         "tx_sig_limit": "7",
         "tx_size_cost_per_byte": "10",
         "sig_verify_cost_ed25519": "590",
@@ -630,6 +651,21 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
+            "address": "kava1645czvg787l0jr6mawhs9dm3mljnggj0z8734j",
+            "coins": [
+              {
+                "denom": "ukava",
+                "amount": "3000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
             "address": "kava1fmas0qlsucg4qwf8mqyrylcg3uluz2ff93lujh",
             "coins": [
               {
@@ -1012,9 +1048,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1135,9 +1171,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1258,9 +1294,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1381,9 +1417,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1504,9 +1540,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1612,9 +1648,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1720,9 +1756,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1828,9 +1864,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -1936,9 +1972,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2044,9 +2080,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2152,9 +2188,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2275,9 +2311,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2398,9 +2434,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2521,9 +2557,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2644,9 +2680,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2767,9 +2803,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2875,9 +2911,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -2998,9 +3034,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3132,9 +3168,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3266,9 +3302,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3400,9 +3436,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3534,9 +3570,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3668,9 +3704,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3817,9 +3853,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -3966,9 +4002,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -4100,9 +4136,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -4233,9 +4269,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1586095200"
+              "end_time": "1586700000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -4318,9 +4354,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1586095200"
+              "end_time": "1586700000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -4403,9 +4439,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1586095200"
+              "end_time": "1586700000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -4488,9 +4524,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1586095200"
+              "end_time": "1586700000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -4573,9 +4609,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1586095200"
+              "end_time": "1586700000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -4658,9 +4694,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -4770,9 +4806,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -4882,9 +4918,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -4994,9 +5030,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5106,9 +5142,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5218,9 +5254,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5330,9 +5366,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5442,9 +5478,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5554,9 +5590,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5666,9 +5702,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5778,9 +5814,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -5890,9 +5926,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6002,9 +6038,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6114,9 +6150,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6226,9 +6262,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6338,9 +6374,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6450,9 +6486,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6562,9 +6598,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6674,9 +6710,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1667656800"
+              "end_time": "1668261600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "31622400",
@@ -6786,9 +6822,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "15724800",
@@ -6895,16 +6931,16 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "83333000000"
+                    "amount": "83333334400"
                   }
                 ]
               },
@@ -6913,7 +6949,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6922,7 +6958,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6931,7 +6967,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6940,7 +6976,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6949,7 +6985,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6958,7 +6994,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6967,7 +7003,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6976,7 +7012,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6985,7 +7021,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -6994,7 +7030,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7003,7 +7039,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7012,7 +7048,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7021,7 +7057,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7030,7 +7066,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7039,7 +7075,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7048,7 +7084,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7057,7 +7093,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7066,7 +7102,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7075,7 +7111,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7084,7 +7120,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7093,7 +7129,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7102,7 +7138,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7111,7 +7147,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6944000000"
+                    "amount": "6944444400"
                   }
                 ]
               },
@@ -7120,7 +7156,7 @@
                 "amount": [
                   {
                     "denom": "ukava",
-                    "amount": "6955000000"
+                    "amount": "6944444400"
                   }
                 ]
               }
@@ -7151,9 +7187,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1612533600"
+              "end_time": "1613138400"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -7326,9 +7362,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1625493600"
+              "end_time": "1626098400"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -7529,7 +7565,22 @@
             "coins": [
               {
                 "denom": "ukava",
-                "amount": "11145502494000"
+                "amount": "11142540514000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "kava1nnwwu4km0alut2q8vhg7zjt45wyehddprfntr9",
+            "coins": [
+              {
+                "denom": "ukava",
+                "amount": "11980000"
               }
             ],
             "public_key": null,
@@ -7561,9 +7612,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -7673,9 +7724,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1588687200"
+              "end_time": "1589292000"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "1",
@@ -7746,9 +7797,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1604584800"
+              "end_time": "1605189600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "15724800",
@@ -7835,12 +7886,12 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
-                  "length": "2592000",
+                  "length": "1",
                   "amount": [
                     {
                       "denom": "ukava",
@@ -7849,7 +7900,7 @@
                   ]
                 },
                 {
-                  "length": "13132800",
+                  "length": "15724799",
                   "amount": [
                     {
                       "denom": "ukava",
@@ -7997,9 +8048,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -8118,9 +8169,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -8226,9 +8277,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -8357,21 +8408,6 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
-            "address": "kava1wu8m65vqazssv2rh8rthv532hzggfr3hgtcx6j",
-            "coins": [
-              {
-                "denom": "ukava",
-                "amount": "50000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
             "address": "kava1u3hqe2m7vm59l30tyaqd3zurz864dlsgn960f7",
             "coins": [
               {
@@ -8408,9 +8444,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "7948800",
@@ -8619,9 +8655,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "7948800",
@@ -8830,9 +8866,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "7948800",
@@ -9041,9 +9077,9 @@
               ],
               "delegated_free": [],
               "delegated_vesting": [],
-              "end_time": "1636120800"
+              "end_time": "1636725600"
             },
-            "start_time": "1572962400",
+            "start_time": "1573567200",
             "vesting_periods": [
               {
                 "length": "7948800",
@@ -9268,9 +9304,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9376,9 +9412,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9484,9 +9520,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9592,9 +9628,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9700,9 +9736,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9808,9 +9844,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -9916,9 +9952,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -10024,9 +10060,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "31622400",
@@ -10147,9 +10183,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -10296,9 +10332,9 @@
                 ],
                 "delegated_free": [],
                 "delegated_vesting": [],
-                "end_time": "1636120800"
+                "end_time": "1636725600"
               },
-              "start_time": "1572962400",
+              "start_time": "1573567200",
               "vesting_periods": [
                 {
                   "length": "15724800",
@@ -10407,57 +10443,8 @@
         }
       ]
     },
-    "validatorvesting": {
-      "previous_block_time": "1970-01-01T00:00:00Z"
-    },
     "genutil": {
       "gentxs": [
-        {
-          "type": "cosmos-sdk/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "cosmos-sdk/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "kava_sentry_1",
-                    "identity": "",
-                    "website": "",
-                    "security_contact": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "1.000000000000000000",
-                    "max_rate": "1.000000000000000000",
-                    "max_change_rate": "0.100000000000000000"
-                  },
-                  "min_self_delegation": "1",
-                  "delegator_address": "kava1wu8m65vqazssv2rh8rthv532hzggfr3hgtcx6j",
-                  "validator_address": "kavavaloper1wu8m65vqazssv2rh8rthv532hzggfr3h9azwz9",
-                  "pubkey": "kavavalconspub1zcjduepqqg29usle4d3hgt4eadn3epppa2h6dsga9mj6sxvyj5prchufgr5qmrneka",
-                  "value": {
-                    "denom": "ukava",
-                    "amount": "50000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "200000"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "AomulOMClUO9ZKmbRxiL86UgPgmnUUuFtjO+qn+41vz7"
-                },
-                "signature": "ob1MFnkB3enrxkNeE3stZELKi//n6Kd8srMsVZRV+yMb5YXQArtPtipAaGggeF27rStc8qT1c8J+B7YX1l0sxw=="
-              }
-            ],
-            "memo": "6f761ff5725f19d10b7bc3694003ae3781700eec@10.215.1.52:26656"
-          }
-        },
         {
           "type": "cosmos-sdk/StdTx",
           "value": {
@@ -11496,8 +11483,20 @@
         }
       ]
     },
-    "supply": {
-      "supply": []
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "ukava"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
     },
     "distribution": {
       "fee_pool": {
@@ -11516,35 +11515,11 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
-    "mint": {
-      "minter": {
-        "inflation": "0.070000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "ukava",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.030000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "5057308"
-      }
-    },
-    "params": null,
-    "slashing": {
-      "params": {
-        "max_evidence_age": "1814400000000000",
-        "signed_blocks_window": "10000",
-        "min_signed_per_window": "0.050000000000000000",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.000100000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
     "bank": {
       "send_enabled": false
+    },
+    "supply": {
+      "supply": []
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -11555,7 +11530,7 @@
         "min_deposit": [
           {
             "denom": "ukava",
-            "amount": "4500000000"
+            "amount": "1000000000"
           }
         ],
         "max_deposit_period": "1209600000000000"
@@ -11564,15 +11539,9 @@
         "voting_period": "1209600000000000"
       },
       "tally_params": {
-        "quorum": "0.334000000000000000",
+        "quorum": "0.400000000000000000",
         "threshold": "0.500000000000000000",
         "veto": "0.334000000000000000"
-      }
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "ukava",
-        "amount": "10000000000"
       }
     }
   }
