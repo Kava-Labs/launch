@@ -6,7 +6,7 @@ If you participated in the previous attempted launch of `kava-1` as a validator 
 
 ### Steps
 
-If you are using the same node that you used for the failed launch, you need to reset the state and download the latest genesis file.
+If you are using the same node that you used for the previous launch attempt, you need to reset the state and download the latest genesis file.
 
 **Note** It is critically important that all validators participating in the relaunch have:
 1. Downloaded and verified the correct genesis file. 
