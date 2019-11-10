@@ -12,6 +12,8 @@ If you are using the same node that you used for the failed launch, you need to 
 1. Downloaded and verified the correct genesis file. 
 2. Reset the state from the previous launch attempt.
 
+**BOTH** steps must be completed to ensure a safe launch. 
+
 ```sh
 # Stop kvd if it is currently running. This depends on how you are running the kvd process. If using 'systemctl', then
 sudo systemctl stop kvd
