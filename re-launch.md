@@ -8,7 +8,9 @@ If you participated in the previous attempted launch of `kava-1` as a validator 
 
 If you are using the same node that you used for the failed launch, you need to reset the state and download the latest genesis file.
 
-**Note** It is critically important that all validators participating in the relaunch have downloaded and verified the correct genesis file. It is also important that the state from the previous launch attempt has been reset.
+**Note** It is critically important that all validators participating in the relaunch have:
+1. Downloaded and verified the correct genesis file. 
+2. Reset the state from the previous launch attempt.
 
 ```sh
 # Stop kvd if it is currently running. This depends on how you are running the kvd process. If using 'systemctl', then
