@@ -8,11 +8,7 @@ If you participated in the previous attempted launch of `kava-1` as a validator 
 
 If you are using the same node that you used for the previous launch attempt, you need to reset the state and download the latest genesis file.
 
-**Note** It is critically important that all validators participating in the relaunch have:
-1. Downloaded and verified the correct genesis file. 
-2. Reset the state from the previous launch attempt.
-
-**BOTH** steps must be completed to ensure a safe launch. 
+**BOTH** steps must be completed to ensure a smooth launch.
 
 ```sh
 # Stop kvd if it is currently running. This depends on how you are running the kvd process. If using 'systemctl', then
@@ -28,14 +24,14 @@ pgrep kvd
 rm -rf $HOME/.kvd/config/genesis.json
 
 # Download the latest genesis file to $HOME/.kvd/config/genesis.json
-wget -O ~/.kvd/config/genesis.json https://raw.githubusercontent.com/Kava-Labs/launch/master/kava-1/genesis.json
+wget -O ~/.kvd/config/genesis.json https://raw.githubusercontent.com/Kava-Labs/launch/master/kava-2/genesis.json
 # Verify the genesis file
 sha256sum $HOME/.kvd/config/genesis.json
-# The output of sha256sum should be 05942be6e582d0688136d6e64bc99363fde80ecbbbffa683fd894698f007caa3
+# The output of sha256sum should be 5ee8a5cf7565cd928dff73959bc553b58c864ae4f4cb5dc0d76c5c4c5857c9a0
 
 # Reset your node. Make sure you have shut down kvd!
 kvd unsafe-reset-all
 
 ```
 
-After you have completed these steps and verified the correctness of the genesis file, you should have your node standing by for launch on Nov 12, 2019 at 14:00 UTC.
+After you have completed these steps and verified the correctness of the genesis file, you should have your node standing by for launch on Nov 15, 2019 at 14:00 UTC.
