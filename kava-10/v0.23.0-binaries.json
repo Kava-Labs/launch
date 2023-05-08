@@ -1,0 +1,6 @@
+{
+  "binaries": {
+    "linux/amd64": "https://github.com/Kava-Labs/kava/releases/download/v0.23.0/kava-v0.23.0-linux-amd64?checksum=sha256:4a08021fb4bfdead97799417a5a9e0363e199d9e04260fb60a8306b76e477d4d",
+    "linux/arm64": "https://github.com/Kava-Labs/kava/releases/download/v0.23.0/kava-v0.23.0-linux-arm64?checksum=sha256:48ba7f708a71946772d916f86a7c750954cf8e013afac1c3a9e71d4ae430e5d0"
+  }
+}
